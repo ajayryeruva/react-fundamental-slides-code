@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-class App extends Component {
-  cities = ["Karachi", "Lahore", "Peshawer", "Quetta"],
+class MyFirstReactComponent extends React.Component {
+   render() {
+       const cityArray = ["Karachi", "Lahore", "Peshawer", "Quetta"]
 
-  render() {
-    return (
-      <ul >
-        cities.map((city) => <li key={city}>{city}</li>
-      </ul>
-    );
-  }
+       return (
+           <ul>
+               {
+                   cityArray.map((city) => <li key={city}> {city} </li>)
+               }
+           </ul>
+       )}
 }
 
-export default App
+ReactDOM.render(
+   <MyFirstReactComponent />,
+   document.getElementById('root')
+);
