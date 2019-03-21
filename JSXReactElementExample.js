@@ -21,23 +21,18 @@ ReactDOM.render(
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const cities = [
-    "Karachi",
-    "Lahore",
-    "Peshawer",
-    "Quetta"
-]
+const cityArray = ["Karachi", "Lahore", "Peshawer", "Quetta"]
 
-const element = <ol>
-    {
-        cities.map(city => <li> {city} </li>
-  }
-</ol>
-
-console.log(element)
+const myElement = <ul>
+   {
+       cityArray.map((city) => <li key={city}> {city} </li>)
+   }
+</ul>
 
 ReactDOM.render(
-    element,
-    document.getElementById('root')
-)
+   myElement,
+   document.getElementById('root')
+);
+
+
 */
