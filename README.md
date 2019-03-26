@@ -9,6 +9,10 @@ For online practice of React https://codesandbox.io
 Some of the DOM attributes supported by React are listed on following link.
 https://reactjs.org/docs/dom-elements.html#all-supported-html-attributes
 
+Resourse:
+1) The Road to learn react (Free book) https://roadtoreact.com/
+2) 30-days-of-react - https://www.fullstackreact.com/30-days-of-react/
+
 
 
 ### Things to install for React environment
