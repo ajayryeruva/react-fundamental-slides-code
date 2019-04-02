@@ -15,12 +15,26 @@ class UserInput extends React.Component {
     }
 
     handleChange = (e) => {
+        //*****************************************************************************
+        //
+        // these below commented lines are for the user input validation
+        // these below lines will not let user input any character other then numbers
+        //
+        //*****************************************************************************
+        //
+        // if (isNaN(e.target.value)) {
+        //     console.log("only numbers")
+        // } else {
+        //     this.setState({ txt: e.target.value })
+        // }
 
-        if (isNaN(e.target.value)) {
-            console.log("only numbers")
-        } else {
-            this.setState({ txt: e.target.value })
-        }
+        //*****************************************************************************
+        //
+        // if you uncomment following line then first comment below line
+        //
+        //*****************************************************************************
+        
+        this.setState({ txt: e.target.value })
     }
     render() {
         // const { changeValue, children } = this.props
