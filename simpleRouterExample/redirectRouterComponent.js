@@ -47,9 +47,9 @@ class App extends Component {
         return (
             <Fragment>
                 <Switch>
-                    <Route exact path="/login" component={() => <LoginComponent />} />
+                    <Route exact path="/login" component={LoginComponent />} />
                     <Route exact path="/helloworld" render={() => <ComponentHw text="router render example" />} />
-                    <Route exact path="/" component={() => <ComponentSlogan />} />
+                    <Route exact path="/" component={ComponentSlogan} />
                     <Route exact component={ErrorComponent} />
                 </Switch>
                 <Link to="/helloworld">Goto to Hello World Page</Link>
